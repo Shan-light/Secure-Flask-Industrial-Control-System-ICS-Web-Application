@@ -94,6 +94,18 @@ The project demonstrates:
 
 ---
 
+### ⚠ Security Warning Banner
+
+Displays an authorized-use notice before authentication to inform users that:
+
+- System activity is monitored
+- Unauthorized access is prohibited
+- User actions may be logged and audited
+- Logging in constitutes consent to monitoring
+
+This supports organizational security policies and user awareness by informing users that activity on the system is subject to monitoring.
+
+---
 ## 👥 Role-Based Access Control
 
 ### User
@@ -151,7 +163,7 @@ Administrators can
 | AC-7 | Account Lockout |
 | AC-9 | Previous Logon Notification |
 | AU-2 | Event Logging |
-
+| User Security Notice | Login banner informing users of monitoring and authorized use |
 ---
 
 # 🏗 System Architecture
@@ -220,7 +232,18 @@ Administrators can
 
 ## 🔐 Login Page
 
-Secure authentication with role-based access control.
+## 🔐 Login Page
+
+Users must authenticate before accessing protected resources. The login page displays a security warning informing users that the system is monitored and unauthorized access is prohibited.
+
+**Key Security Features**
+- Security warning banner
+- Username and password authentication
+- Role-based access control (RBAC)
+- Secure session management
+- Account lockout protection
+
+> **Security Notice:** *This system is monitored. Unauthorized use is prohibited. By logging in, you consent to monitoring and auditing.*
 
 ![Login Page](screenshots/login-page.png)
 
