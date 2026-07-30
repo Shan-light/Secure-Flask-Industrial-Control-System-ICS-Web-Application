@@ -220,11 +220,22 @@ Administrators can
 
 # 🔍 Security Testing
 
-| Tool | Purpose |
-|------|----------|
-| Bandit | Python Static Security Analysis |
-| Flawfinder | Source Code Vulnerability Analysis |
-| OWASP ZAP | Dynamic Web Application Penetration Testing |
+The application underwent both **Static Application Security Testing (SAST)** and **Dynamic Application Security Testing (DAST)** to identify security weaknesses before deployment.
+
+| Tool | Type | Purpose | Key Findings |
+|------|------|---------|--------------|
+| Bandit | SAST | Python security analysis | Identified debug mode enabled and a hardcoded secret key. :contentReference[oaicite:0]{index=0} |
+| Flawfinder | SAST | Source code analysis | Detected code quality and potential security issues requiring review. :contentReference[oaicite:1]{index=1} |
+| OWASP ZAP | DAST | Web application penetration testing | Identified missing CSRF protection, CSP header, and anti-clickjacking headers. :contentReference[oaicite:2]{index=2} |
+
+### Bandit Scan
+
+![Bandit Scan](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/70de07a3d46e4a14125b4de6c8f1dfffdc8ef71e/Images/bandit-result4pyFlask-app1.jpg)
+
+
+### OWASP ZAP Scan
+
+![OWASP ZAP Scan](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/70de07a3d46e4a14125b4de6c8f1dfffdc8ef71e/Images/OWASP-ZAP-results.jpg)
 
 ---
 
