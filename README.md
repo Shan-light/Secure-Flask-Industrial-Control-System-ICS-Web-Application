@@ -332,25 +332,29 @@ The Logout feature securely ends the user's session by clearing session data and
 
 ---
 
-# 📚 Key Takeaways
+# 📚 Key Takeaways & Security Improvements
+
+This project demonstrated the integration of security throughout the **Secure Software Development Lifecycle (SSDLC)** by applying **NIST security controls**, addressing **OWASP Top 10** risks, and implementing secure coding practices using **Python** and **Flask**.
+
+Key accomplishments and improvements include:
 
 - Integrated security throughout the Secure Software Development Lifecycle (SSDLC).
-- Applied NIST security controls to a practical web application.
-- Evaluated OWASP Top 10 security risks.
-- Implemented authentication and role-based access control.
-- Built comprehensive audit logging capabilities.
-- Performed both static and dynamic security testing.
-- Strengthened secure coding skills using Python and Flask.
+- Applied NIST security controls, including authentication, role-based access control (RBAC), least privilege, account lockout, and audit logging.
+- Evaluated and mitigated common web application risks identified in the OWASP Top 10.
+- Conducted both **Static Application Security Testing (SAST)** using Bandit and Flawfinder and **Dynamic Application Security Testing (DAST)** using OWASP ZAP.
+- Identified and remediated security weaknesses, including disabling Flask debug mode for production, recommending secure storage of secret keys using environment variables, implementing CSRF protection, and strengthening HTTP security headers (Content Security Policy and X-Frame-Options).
+- Strengthened practical skills in secure software development, security testing, vulnerability assessment, and secure web application design.
 
 ---
 
 # 🚀 Future Enhancements
 
-- Multi-Factor Authentication (MFA)
-- Password Hashing with bcrypt
-- Database Integration (PostgreSQL)
-- Docker Deployment
-- HTTPS/TLS Configuration
-- CI/CD Security Pipeline
-- Automated Vulnerability Scanning
-- Centralized Security Monitoring
+Future improvements to strengthen the application include:
+
+- Replace CSV storage with a secure relational database (PostgreSQL or MySQL).
+- Implement Multi-Factor Authentication (MFA) for enhanced user authentication.
+- Enforce HTTPS/TLS for secure communication.
+- Add CSRF protection to all forms using Flask-WTF.
+- Configure security headers such as Content Security Policy (CSP) and X-Frame-Options.
+- Integrate automated testing and CI/CD security scanning.
+- Deploy the application using Docker and a production web server (Gunicorn with Nginx).
