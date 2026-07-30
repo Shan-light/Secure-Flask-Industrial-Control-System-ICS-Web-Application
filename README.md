@@ -232,8 +232,6 @@ Administrators can
 
 ## 🔐 Login Page
 
-## 🔐 Login Page
-
 Users must authenticate before accessing protected resources. The login page displays a security warning informing users that the system is monitored and unauthorized access is prohibited.
 
 **Key Security Features**
@@ -245,7 +243,7 @@ Users must authenticate before accessing protected resources. The login page dis
 
 > **Security Notice:** *This system is monitored. Unauthorized use is prohibited. By logging in, you consent to monitoring and auditing.*
 
-![Login Page](screenshots/login-page.png)
+![Login Page](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/19bcf36c921981a6b40479a224cf5e39c2540567/Images/login%20page%201.jpg)
 
 ---
 
