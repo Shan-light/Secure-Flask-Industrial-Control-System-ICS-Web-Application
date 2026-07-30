@@ -263,7 +263,7 @@ Lower home page
 
 Displays environmental sensor readings while enforcing least privilege.
 
-![ICS Monitoring](screenshots/ics-monitoring.png)
+![ICS Monitoring](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/32bfc5840089df193df3703aea454f0707621952/Images/ICS%20page.jpg)
 
 ---
 
@@ -271,7 +271,7 @@ Displays environmental sensor readings while enforcing least privilege.
 
 Administrator page for managing users and unlocking accounts.
 
-![Manage Users](screenshots/manage-users.png)
+![Manage Users](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/manage%20user%20page.jpg)
 
 ---
 
@@ -279,7 +279,7 @@ Administrator page for managing users and unlocking accounts.
 
 Administrators can create, update, and delete environmental sensor records.
 
-![Manage Sensors](screenshots/manage-sensors.png)
+![Manage Sensors](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/sensor%20management%20page.jpg)
 
 ---
 
@@ -287,7 +287,7 @@ Administrators can create, update, and delete environmental sensor records.
 
 Displays system activity including IP addresses, timestamps, and HTTP requests.
 
-![Access Logs](screenshots/access-logs.png)
+![Access Logs](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/log%20info%20page.jpg)
 
 ---
 
@@ -295,7 +295,7 @@ Displays system activity including IP addresses, timestamps, and HTTP requests.
 
 Overview of IaaS, SaaS, and Serverless Computing.
 
-![Cloud Services](screenshots/cloud-services.png)
+![Cloud Services](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/cloud%20services%20page.jpg)
 
 ---
 
@@ -303,7 +303,21 @@ Overview of IaaS, SaaS, and Serverless Computing.
 
 Summarizes the application's purpose and implemented security controls.
 
-![About Page](screenshots/about-page.png)
+![About Page](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/about%20webb-app%20page.jpg)
+
+---
+
+## 🚪 Logout
+
+The Logout feature securely ends the user's session by clearing session data and redirecting the user to the login page. This helps prevent unauthorized access to protected resources after a session has ended.
+
+**Key Security Features**
+
+- Clears active session data
+- Redirects users to the login page
+- Prevents unauthorized access to protected pages after logout
+
+![Logout Page](https://github.com/Shan-light/Secure-Flask-Industrial-Control-System-ICS-Web-Application/blob/09f08d0d7242d8e7db53fce8858bf782adfeab5d/Images/login%20page.jpg)
 
 ---
 
