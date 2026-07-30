@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Access Logs</title>
+ 
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}">
+</head>
+ 
+<body>
+ 
+{% include 'navbar.html' %}
+ 
+<div class="container mt-5">
+ 
+    <h2>📊 Access Log Viewer</h2>
+    <p class="text-muted">
+        Displays all web activity including page visits, IP addresses, and request types.
+    </p>
+ 
+    <!-- LOG TABLE -->
+    <table class="table table-bordered table-striped table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Timestamp</th>
+                <th>IP Address</th>
+                <th>Method</th>
+                <th>Path</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.timestamp }}</td>
+                <td>{{ log.ip }}</td>
+                <td>{{ log.method }}</td>
+                <td>{{ log.path }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+ 
+    <!-- BACK BUTTON -->
+    <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">
+        ⬅ Back to Home
+    </a>
+ 
+</div>
+ 
+</body>
+</html>

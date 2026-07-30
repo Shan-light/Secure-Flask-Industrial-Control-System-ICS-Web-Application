@@ -1,0 +1,55 @@
+<!-- Insert new record -->
+<a href="{{ url_for('index') }}" class="btn btn-secondary mb-3">Back to Home</a>
+<form method="POST">
+    <input type="hidden" name="action" value="insert">
+    <div class="form-group">
+        <label>Time</label>
+        <input type="text" name="Time" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label>Temperature</label>
+        <input type="text" name="Temperature" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label>Humidity</label>
+        <input type="text" name="Humidity" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Add Record</button>
+</form>
+ 
+<!-- Existing Records Table -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row['Time'] }}</td>
+            <td>{{ row['Temperature'] }}</td>
+            <td>{{ row['Humidity'] }}</td>
+            <td>
+                <!-- Update form -->
+                <form method="POST" style="display:inline;">
+                    <input type="hidden" name="action" value="update">
+                    <input type="hidden" name="Time" value="{{ row['Time'] }}">
+                    <input type="text" name="Temperature" placeholder="New Temp" required>
+                    <input type="text" name="Humidity" placeholder="New Humidity" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Update</button>
+                </form>
+                <!-- Delete form -->
+                <form method="POST" style="display:inline;">
+                    <input type="hidden" name="action" value="delete">
+                    <input type="hidden" name="Time" value="{{ row['Time'] }}">
+                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
